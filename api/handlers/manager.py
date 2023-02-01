@@ -2,7 +2,9 @@ import imgkit
 from lxml import etree
 from . import common, verify
 from .common import session, headers
+from . import service
 
+# TODO 自动登录 service，用户仅需登录 webvpn 即可
 class Manager(object):
     pass
 
@@ -12,7 +14,7 @@ class SZDLManager(Manager):
         user = common.latestUser
         if user == None:
             return False, 'Please login first'
-        return verify.webvpn(user.username, user.password)
+        return service.RefreshUser(user.username, user.password)
 
 # 数字东林 - 教务在线实现
 class JWZX_SZDLManager(SZDLManager):
