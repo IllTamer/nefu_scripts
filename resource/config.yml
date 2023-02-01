@@ -1,0 +1,3 @@
+init:
+  # 是否开启初始化服务时自动登录账户
+  auto-login: true

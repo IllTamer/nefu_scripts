@@ -1,0 +1,7 @@
+#  http://127.0.0.1:8000/api/register/?username=2020211063&password=Zhoupeizhao666 
+
+GET http://127.0.0.1:8000/api/login/?username=2020211063
+
+GET http://127.0.0.1:8000/api/service/JWZX_SZDL/login
+
+GET http://127.0.0.1:8000/api/service/JWZX_SZDL/do
